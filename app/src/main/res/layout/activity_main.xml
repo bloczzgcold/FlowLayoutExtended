@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mc.flowlayout.MainActivity">
+    <Button
+        android:id="@+id/btn_add_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="addFlowBtn"
+        android:text="添加"/>
+
+    <com.mc.flowlayout.flowlayout.FlowLayout
+        android:id="@+id/flow_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:horizontal_spacing="24dp"
+        app:vertical_spacing="24dp">
+
+    </com.mc.flowlayout.flowlayout.FlowLayout>
+</LinearLayout>
